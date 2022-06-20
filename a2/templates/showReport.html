@@ -1,0 +1,39 @@
+<!--Name: Madeline Marks-->
+<!--Class: COP4521-->
+<!--FSUID: mmm18e-->
+<!--Due Date 02/14/2022-->
+<!--The program in this file is the individual work of Madeline Marks.-->
+<html>
+    <center>
+    <body>
+        <h1>Top Restaurants in Town</h1>
+        <br>
+        <table border = "1">
+            <thead>
+                <tr>
+                    <td><b>Restaurant</b></td>
+                    <td><b>Food</b></td>
+                    <td><b>Service</b></td>
+                    <td><b>Ambience</b></td>
+                    <td><b>Price</b></td>
+                    <td><b>Rating</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %} 
+                <tr>
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td>{{row[4]}}</td>
+                    <td>{{row[5]}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+    </body>
+    <div><a href = "/">Back To Home</a></div>
+    </center>
+</html>

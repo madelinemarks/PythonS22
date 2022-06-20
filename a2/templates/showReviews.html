@@ -1,0 +1,29 @@
+<!--Name: Madeline Marks-->
+<!--Class: COP4521-->
+<!--FSUID: mmm18e-->
+<!--Due Date 02/14/2022-->
+<!--The program in this file is the individual work of Madeline Marks.-->
+<html>
+    <center>
+    <body>
+        <h1>Reviews for {{rst}}</h1>
+        <br>
+        <table border = 1>
+            <thead>
+                    <td><b><center>User</center></b></td>
+                    <td><b><center>Review</center></b></td>
+                    <td><b><center>Rating</center></b></td>
+            </thead>
+                {% for row in rows %} 
+                <tr>
+                    <td>{{row[0]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[1]}}</td>
+                </tr>
+                {% endfor %}
+        </table>
+        <div><a href = "/">Back To Home</a></div>
+    </form>
+    </body>
+    </center>
+</html>
